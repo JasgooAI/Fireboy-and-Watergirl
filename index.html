@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Fireboy and Watergirl online for free. Enjoy this classic cooperative puzzle platformer game directly in your browser.">
+    <title>Fireboy and Watergirl Online Game | Play for Free</title>
+    <link rel="canonical" href="https://fireboy-watergirl-game.vercel.app/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        appleBlue: '#007AFF',
+                        appleRed: '#FF3B30',
+                        appleGreen: '#4CD964',
+                        appleLightGray: '#F2F2F7',
+                        appleDarkGray: '#1D1D1F',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        /* 自定义样式 */
+        .game-container {
+            max-width: 1060px;
+            height: 650px;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 1080px) {
+            .game-container {
+                width: 100%;
+                height: 600px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .game-container {
+                height: 500px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .game-container {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .game-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-appleLightGray text-appleDarkGray">
+    <!-- 头部区域 -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%23007AFF' rx='10'/%3E%3Cpath d='M15 25 L25 15 L35 25 L25 35 Z' fill='white'/%3E%3C/svg%3E" alt="Game Logo" class="w-10 h-10 mr-3">
+                <h1 class="text-2xl md:text-3xl font-bold text-appleBlue">Fireboy and Watergirl</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#game" class="text-appleBlue hover:text-opacity-80 transition-colors">Play Game</a></li>
+                    <li><a href="#about" class="text-appleDarkGray hover:text-appleBlue transition-colors">About</a></li>
+                    <li><a href="#features" class="text-appleDarkGray hover:text-appleBlue transition-colors">Features</a></li>
+                    <li><a href="#faq" class="text-appleDarkGray hover:text-appleBlue transition-colors">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 游戏区域 -->
+        <section id="game" class="mb-16">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4 text-appleDarkGray">Play Fireboy and Watergirl Online</h2>
+                <p class="text-lg max-w-3xl mx-auto">Control both characters simultaneously to solve puzzles and reach the exit doors.</p>
+            </div>
+            
+            <div class="game-container mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- 游戏iframe -->
+                <iframe id="gameFrame" width="100%" height="100%" src="https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75/?gd_sdk_referrer_url=https://www.onlinegames.io/fireboy-and-watergirl" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="true" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-600">Having trouble with the game? Try refreshing the page or using a different browser.</p>
+            </div>
+        </section>
+
+        <!-- 游戏介绍 -->
+        <section id="about" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-appleDarkGray">About Fireboy and Watergirl</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="mb-4">Fireboy and Watergirl is a popular cooperative puzzle platformer game that requires teamwork and coordination. The game features two characters with different abilities that must work together to navigate through challenging levels.</p>
+                        
+                        <p class="mb-4">The game is designed for two players, but can also be played by a single player controlling both characters. Each character has unique properties - Fireboy can walk through fire but is harmed by water, while Watergirl can walk through water but is harmed by fire.</p>
+                        
+                        <p>Players must navigate through various obstacles, solve puzzles, collect gems, and reach their respective exit doors to complete each level.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-appleBlue">How to Play:</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>Fireboy Controls:</strong> Use the arrow keys to move Fireboy (←→ to move left/right, ↑ to jump)</li>
+                            <li><strong>Watergirl Controls:</strong> Use WASD keys to move Watergirl (A/D to move left/right, W to jump)</li>
+                            <li>Collect all diamonds for bonus points</li>
+                            <li>Avoid the wrong elements (Fireboy can't touch water, Watergirl can't touch fire)</li>
+                            <li>Both characters must reach their respective doors to complete the level</li>
+                            <li>Work together to solve puzzles and activate switches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色内容 -->
+        <section id="features" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-appleDarkGray text-center">Game Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-appleBlue">
+                    <div class="text-appleBlue text-4xl mb-4">🧩</div>
+                    <h3 class="text-xl font-semibold mb-2">Challenging Puzzles</h3>
+                    <p>Navigate through increasingly difficult levels with unique puzzles that require both timing and strategy.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-appleRed">
+                    <div class="text-appleRed text-4xl mb-4">👥</div>
+                    <h3 class="text-xl font-semibold mb-2">Cooperative Gameplay</h3>
+                    <p>Play with a friend or control both characters yourself to solve puzzles that require teamwork.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-appleGreen">
+                    <div class="text-appleGreen text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-semibold mb-2">Collectible Gems</h3>
+                    <p>Collect all the gems in each level for a perfect score and unlock special achievements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section id="faq" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-8 text-appleDarkGray">Frequently Asked Questions</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-appleBlue">Can I play Fireboy and Watergirl alone?</h3>
+                        <p>Yes! While the game is designed for two players, you can play alone by controlling both characters using different sets of keys.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-appleBlue">Is the game free to play?</h3>
+                        <p>Yes, Fireboy and Watergirl is completely free to play online through our website.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-appleBlue">Does the game work on mobile devices?</h3>
+                        <p>The game is optimized for desktop play with a keyboard. While our website is mobile-responsive, the game controls are designed for keyboard input.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-appleBlue">Are there different levels in the game?</h3>
+                        <p>Yes, the game features multiple levels with increasing difficulty. Each level introduces new puzzles and challenges.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-appleBlue">How do I save my progress?</h3>
+                        <p>The game automatically saves your progress as you complete levels, as long as you're playing on the same device and browser.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚区域 -->
+    <footer class="bg-appleDarkGray text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Fireboy and Watergirl</h3>
+                    <p class="text-gray-300">A free online cooperative puzzle platformer game that challenges your coordination and problem-solving skills.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#game" class="text-gray-300 hover:text-appleBlue transition-colors">Play Game</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-appleBlue transition-colors">About</a></li>
+                        <li><a href="#features" class="text-gray-300 hover:text-appleBlue transition-colors">Features</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-appleBlue transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-appleBlue transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-appleBlue transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-appleBlue transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Fireboy and Watergirl Online. All rights reserved.</p>
+                <p class="mt-2 text-sm">This is an unofficial fan site. Fireboy and Watergirl is owned by Oslo Albet.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
